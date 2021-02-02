@@ -1,7 +1,7 @@
 ﻿
 namespace Task01
 {
-    partial class Form1
+    partial class Удвоитель
     {
         /// <summary>
         /// Required designer variable.
@@ -128,6 +128,7 @@ namespace Task01
             // 
             // btnUndo
             // 
+            this.btnUndo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnUndo.Location = new System.Drawing.Point(147, 113);
             this.btnUndo.Name = "btnUndo";
             this.btnUndo.Size = new System.Drawing.Size(75, 23);
@@ -136,7 +137,7 @@ namespace Task01
             this.btnUndo.UseVisualStyleBackColor = true;
             this.btnUndo.Click += new System.EventHandler(this.btnUndo_Click);
             // 
-            // Form1
+            // Удвоитель
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -150,9 +151,9 @@ namespace Task01
             this.Controls.Add(this.btnCommand1);
             this.Controls.Add(this.menuStrip);
             this.MainMenuStrip = this.menuStrip;
-            this.MaximumSize = new System.Drawing.Size(250, 200);
-            this.MinimumSize = new System.Drawing.Size(200, 175);
-            this.Name = "Form1";
+            this.MaximumSize = new System.Drawing.Size(350, 300);
+            this.MinimumSize = new System.Drawing.Size(250, 200);
+            this.Name = "Удвоитель";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.menuStrip.ResumeLayout(false);

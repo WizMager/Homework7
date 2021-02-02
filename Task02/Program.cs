@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Task01
+namespace Task02
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace Task01
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Удвоитель());
+            Application.Run(new Form1());
         }
     }
 }

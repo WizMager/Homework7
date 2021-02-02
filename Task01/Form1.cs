@@ -14,13 +14,13 @@ namespace Task01
     //       б) Добавить меню и команду «Играть». При нажатии появляется сообщение, какое число должен получить игрок.
     //          Игрок должен постараться получить это число за минимальное количество ходов.
     //       в) * Добавить кнопку «Отменить», которая отменяет последние ходы.
-    public partial class Form1 : Form
+    public partial class Удвоитель : Form
     {
         private int counter = 0;
         private Dictionary<int, int> undoNumbers = new Dictionary<int, int>();
         private bool isStart = false;
 
-        public Form1()
+        public Удвоитель()
         {
             InitializeComponent();
             btnCommand1.Text = "+1";
@@ -52,6 +52,7 @@ namespace Task01
         {
             lblNumber.Text = "0";
             counter++;
+            UndoNumberPlus();
         }
 
         #region Task 1.1(б)
@@ -64,8 +65,9 @@ namespace Task01
             lblNumber.Text = "0";
             lblRndNumTxt.Visible = true;
             btnUndo.Visible = true;
-            undoNumbers[0] = 0;
             isStart = true;
+            counter = 0;
+            undoNumbers[0] = 0;
         }
 
         private void CheckMatch()
