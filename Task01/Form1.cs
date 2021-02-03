@@ -60,7 +60,7 @@ namespace Task01
         {
             Random random = new Random();
             int number = random.Next(1, 100); ;
-            MessageBox.Show($"Вам унжно получить число {number}.");
+            MessageBox.Show($"Вам нужно получить число {number}.");
             labelRandomNumber.Text = number.ToString();
             lblNumber.Text = "0";
             lblRndNumTxt.Visible = true;
